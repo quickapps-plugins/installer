@@ -24,7 +24,7 @@ use QuickApps\Utility\HookTrait;
  * Base class for tasks.
  *
  */
-class TaskBase {
+abstract class BaseTask {
 
 	use InstanceConfigTrait;
 	use HookTrait;
@@ -65,9 +65,7 @@ class TaskBase {
  * 
  * @return mixed
  */
-	public function run() {
-		throw new FatalErrorException(__d('installer', 'run() is not implemented.'));
-	}
+	abstract public function run();
 
 /**
  * Creates a new instance of this class, so we can chain multiple
