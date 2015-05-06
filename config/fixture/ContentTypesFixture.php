@@ -10,10 +10,10 @@
  * @license  http://opensource.org/licenses/gpl-3.0.html GPL-3.0 License
  */
 
-class NodeTypesFixture
+class ContentTypesFixture
 {
 
-    public $table = 'node_types';
+    public $table = 'content_types';
 
     public $fields = [
     '_constraints' =>
@@ -29,7 +29,7 @@ class NodeTypesFixture
       [
       ],
     ],
-    'node_types_slug' =>
+    'content_types_slug' =>
     [
       'type' => 'unique',
       'columns' =>

@@ -10,10 +10,10 @@
  * @license  http://opensource.org/licenses/gpl-3.0.html GPL-3.0 License
  */
 
-class NodeTypePermissionsFixture
+class ContentRevisionsFixture
 {
 
-    public $table = 'node_type_permissions';
+    public $table = 'content_revisions';
 
     public $fields = [
     '_constraints' =>
@@ -40,7 +40,7 @@ class NodeTypePermissionsFixture
     'autoIncrement' => true,
     'precision' => null,
     ],
-    'node_type_id' =>
+    'content_id' =>
     [
     'type' => 'integer',
     'length' => 11,
@@ -51,26 +51,43 @@ class NodeTypePermissionsFixture
     'precision' => null,
     'autoIncrement' => null,
     ],
-    'role_id' =>
-    [
-    'type' => 'integer',
-    'length' => 11,
-    'unsigned' => false,
-    'null' => false,
-    'default' => null,
-    'comment' => '',
-    'precision' => null,
-    'autoIncrement' => null,
-    ],
-    'action' =>
+    'summary' =>
     [
     'type' => 'string',
-    'length' => 15,
-    'null' => false,
+    'length' => 160,
+    'null' => true,
     'default' => null,
-    'comment' => 'create, edit, delete, publish',
+    'comment' => '',
     'precision' => null,
     'fixed' => null,
+    ],
+    'data' =>
+    [
+    'type' => 'text',
+    'length' => null,
+    'null' => false,
+    'default' => null,
+    'comment' => '',
+    'precision' => null,
+    ],
+    'hash' =>
+    [
+    'type' => 'string',
+    'length' => 100,
+    'null' => false,
+    'default' => null,
+    'comment' => '',
+    'precision' => null,
+    'fixed' => null,
+    ],
+    'created' =>
+    [
+    'type' => 'datetime',
+    'length' => null,
+    'null' => false,
+    'default' => null,
+    'comment' => '',
+    'precision' => null,
     ],
     ];
 

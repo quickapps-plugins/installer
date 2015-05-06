@@ -10,10 +10,10 @@
  * @license  http://opensource.org/licenses/gpl-3.0.html GPL-3.0 License
  */
 
-class NodesFixture
+class ContentsFixture
 {
 
-    public $table = 'nodes';
+    public $table = 'contents';
 
     public $fields = [
     '_constraints' =>
@@ -40,7 +40,7 @@ class NodesFixture
     'autoIncrement' => true,
     'precision' => null,
     ],
-    'node_type_id' =>
+    'content_type_id' =>
     [
     'type' => 'integer',
     'length' => 11,
@@ -51,7 +51,7 @@ class NodesFixture
     'precision' => null,
     'autoIncrement' => null,
     ],
-    'node_type_slug' =>
+    'content_type_slug' =>
     [
     'type' => 'string',
     'length' => 100,
@@ -196,8 +196,8 @@ class NodesFixture
     0 =>
     [
     'id' => 1,
-    'node_type_id' => 1,
-    'node_type_slug' => 'article',
+    'content_type_id' => 1,
+    'content_type_slug' => 'article',
     'translation_for' => null,
     'slug' => 'hello-world',
     'title' => '¡Hello World!',
@@ -215,8 +215,8 @@ class NodesFixture
     1 =>
     [
     'id' => 2,
-    'node_type_id' => 2,
-    'node_type_slug' => 'page',
+    'content_type_id' => 2,
+    'content_type_slug' => 'page',
     'translation_for' => null,
     'slug' => 'about',
     'title' => 'About',

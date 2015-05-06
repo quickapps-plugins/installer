@@ -10,10 +10,10 @@
  * @license  http://opensource.org/licenses/gpl-3.0.html GPL-3.0 License
  */
 
-class NodesRolesFixture
+class ContentTypePermissionsFixture
 {
 
-    public $table = 'nodes_roles';
+    public $table = 'content_type_permissions';
 
     public $fields = [
     '_constraints' =>
@@ -40,7 +40,7 @@ class NodesRolesFixture
     'autoIncrement' => true,
     'precision' => null,
     ],
-    'node_id' =>
+    'content_type_id' =>
     [
     'type' => 'integer',
     'length' => 11,
@@ -54,13 +54,23 @@ class NodesRolesFixture
     'role_id' =>
     [
     'type' => 'integer',
-    'length' => 10,
+    'length' => 11,
     'unsigned' => false,
     'null' => false,
     'default' => null,
-    'comment' => 'The user’s role ID from roles table',
+    'comment' => '',
     'precision' => null,
     'autoIncrement' => null,
+    ],
+    'action' =>
+    [
+    'type' => 'string',
+    'length' => 15,
+    'null' => false,
+    'default' => null,
+    'comment' => 'create, edit, delete, publish',
+    'precision' => null,
+    'fixed' => null,
     ],
     ];
 

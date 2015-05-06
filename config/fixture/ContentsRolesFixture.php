@@ -10,10 +10,10 @@
  * @license  http://opensource.org/licenses/gpl-3.0.html GPL-3.0 License
  */
 
-class NodeRevisionsFixture
+class ContentsRolesFixture
 {
 
-    public $table = 'node_revisions';
+    public $table = 'contents_roles';
 
     public $fields = [
     '_constraints' =>
@@ -40,7 +40,7 @@ class NodeRevisionsFixture
     'autoIncrement' => true,
     'precision' => null,
     ],
-    'node_id' =>
+    'content_id' =>
     [
     'type' => 'integer',
     'length' => 11,
@@ -51,43 +51,16 @@ class NodeRevisionsFixture
     'precision' => null,
     'autoIncrement' => null,
     ],
-    'summary' =>
+    'role_id' =>
     [
-    'type' => 'string',
-    'length' => 160,
-    'null' => true,
-    'default' => null,
-    'comment' => '',
-    'precision' => null,
-    'fixed' => null,
-    ],
-    'data' =>
-    [
-    'type' => 'text',
-    'length' => null,
+    'type' => 'integer',
+    'length' => 10,
+    'unsigned' => false,
     'null' => false,
     'default' => null,
-    'comment' => '',
+    'comment' => 'The user’s role ID from roles table',
     'precision' => null,
-    ],
-    'hash' =>
-    [
-    'type' => 'string',
-    'length' => 100,
-    'null' => false,
-    'default' => null,
-    'comment' => '',
-    'precision' => null,
-    'fixed' => null,
-    ],
-    'created' =>
-    [
-    'type' => 'datetime',
-    'length' => null,
-    'null' => false,
-    'default' => null,
-    'comment' => '',
-    'precision' => null,
+    'autoIncrement' => null,
     ],
     ];
 
